@@ -1,0 +1,6 @@
+<img
+    class="card-img-top"
+    *ngFor="let track of playlist"
+    [src]="track.imageUrl"
+    alt="{{ track.track }} by {{ track.artist }}"
+/>

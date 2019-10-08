@@ -1,0 +1,12 @@
+{
+    "/api/*": {
+        "target": "https://accounts.spotify.com",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/playlists": {
+        "target": "https://api.spotify.com/v1",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
