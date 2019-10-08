@@ -1,6 +1,13 @@
-<img
-    class="card-img-top"
-    *ngFor="let track of playlist"
-    [src]="track.imageUrl"
-    alt="{{ track.track }} by {{ track.artist }}"
-/>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md-4 mb-5" *ngFor="let track of playlist">
+            <div class="track">
+                <img [src]="track.imageUrl" class="card-img-top" alt="" />
+                <div class="track__info">
+                    <h5 class="mb-1">{{ track.track }}</h5>
+                    <p>by {{ track.artist }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

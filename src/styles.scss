@@ -1,1 +1,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+// COLORS
+$sp-black: #000;
+$sp-white: #fff;
+
+body {
+    background: $sp-black;
+}

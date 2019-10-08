@@ -49,12 +49,7 @@ describe('LoginEffects', () => {
             type: fromLoginActions.getToken.type
         });
 
-        loginEffects = new LoginEffects(
-            actions,
-            apiService,
-            router,
-            storageService
-        );
+        loginEffects = new LoginEffects(actions, apiService, storageService);
 
         storageService.saveToken = jest.fn();
         apiService.login = jest
