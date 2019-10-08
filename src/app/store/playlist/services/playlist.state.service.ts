@@ -10,6 +10,6 @@ export class PlaylistStateService {
     constructor(private store: Store<fromPlaylist.PlaylistAppState>) {}
 
     getPlaylist(): Observable<Track[]> {
-        return this.store.pipe(select(fromPlaylist.selectPlaylistFeatureState));
+        return this.store.pipe(select(fromPlaylist.selectPlaylistTracks));
     }
 }

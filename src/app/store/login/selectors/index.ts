@@ -1,4 +1,4 @@
-import { createFeatureSelector, createSelector } from '@ngrx/store';
+import { createSelector } from '@ngrx/store';
 
 import * as fromLoginReducers from '../reducers/login.reducer';
 
@@ -8,9 +8,9 @@ export interface LoginAppState {
 
 export type LoginState = fromLoginReducers.State;
 
-export const selectLogin = createFeatureSelector('login');
+export const selectLogin = (state: LoginAppState) => state.login;
 
-export const selectLoginState = createSelector(
+export const selectLoginToken = createSelector(
     selectLogin,
-    (state: LoginState) => state
+    (state: fromLoginReducers.State) => state.token
 );

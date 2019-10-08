@@ -1,4 +1,4 @@
-import { createFeatureSelector, createSelector } from '@ngrx/store';
+import { createSelector } from '@ngrx/store';
 
 import * as fromPlaylistReducers from '../reducers/playlist.reducer';
 
@@ -8,11 +8,9 @@ export interface PlaylistAppState {
 
 export type PlaylistState = fromPlaylistReducers.State;
 
-export const selectPlaylistFeature = createFeatureSelector<
-    fromPlaylistReducers.State
->('playlist');
+export const selectPlaylist = (state: PlaylistAppState) => state.playlist;
 
-export const selectPlaylistFeatureState = createSelector(
-    selectPlaylistFeature,
-    (state: PlaylistState) => state.tracks
+export const selectPlaylistTracks = createSelector(
+    selectPlaylist,
+    (state: fromPlaylistReducers.State) => state.tracks
 );
