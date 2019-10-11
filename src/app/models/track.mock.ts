@@ -10,12 +10,12 @@ export const playlistDtoTrackMock: PlaylistTrackDto = {
     album: {
         images: [
             {
-                url: 'image url'
+                url: 'image url'
             }
         ]
     },
-    artists: [{ name: 'artist name' }],
-    name: 'track name'
+    artists: [{ name: 'artist name' }],
+    name: 'track name'
 };
 
 export const playlistDtoItemMock: PlaylistItemDto = {

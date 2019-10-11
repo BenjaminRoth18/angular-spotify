@@ -1,5 +1,5 @@
-/api/*  https://accounts.spotify.com/:splat  200
+/api/*  https://accounts.spotify.com/api/:splat  200
 
-/playlists/* https://api.spotify.com/v1/:splat 200
+/playlists/* https://api.spotify.com/v1/playlists/:splat 200
 
 /*  /index.html 200

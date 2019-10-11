@@ -1,4 +1,4 @@
-import { playlistDtoMock } from 'src/app/models/track.mock';
+import { playlistDtoMock, trackMock } from 'src/app/models/track.mock';
 
 import { MockStorageService } from '../storage/storage.service.mock';
 import { SpotifyService } from './spotify.service';
@@ -31,8 +31,8 @@ describe('SpotifyService', () => {
     });
 
     it('should create playlist snapshot', () => {
-        expect(
-            spotifyService.createPlaylist(playlistDtoMock)
-        ).toMatchSnapshot();
+        const expected = spotifyService.createPlaylist(playlistDtoMock);
+        const received = [trackMock];
+        expect(received).toEqual(expected);
     });
 });
