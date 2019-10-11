@@ -1,4 +1,4 @@
-import { trackMock } from 'src/app/models/track.mock';
+import { trackMock } from 'src/app/shared/models/track/track.mock';
 
 import * as fromPlaylistActions from '../actions/playlist.actions';
 import * as fromPlaylistReducer from './playlist.reducers';

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Track } from 'src/app/models/track.model';
+import { Track } from 'src/app/shared/models/track/track.model';
 import { LayoutStateService } from 'src/app/store/layout/services/layout.state.service';
 import { PlaylistStateService } from 'src/app/store/playlist/services/playlist.state.service';
 

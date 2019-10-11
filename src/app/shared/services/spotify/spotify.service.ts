@@ -1,6 +1,6 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { PlaylistDto, PlaylistItemDto, Track } from 'src/app/models/track.model';
+import { PlaylistDto, PlaylistItemDto, Track } from 'src/app/shared/models/track/track.model';
 
 import { StorageService } from '../storage/storage.service';
 

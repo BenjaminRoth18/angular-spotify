@@ -1,13 +1,13 @@
 import { Action } from '@ngrx/store';
 import { cold } from 'jest-marbles';
 import { Observable, of } from 'rxjs';
-import { HttpMock } from 'src/app/shared/models/http.mock';
+import { HttpMock } from 'src/app/shared/models/http/http.mock';
 import { ApiService } from 'src/app/shared/services/api/api.service';
 import { MockApiService } from 'src/app/shared/services/api/api.service.mock';
 import { SpotifyService } from 'src/app/shared/services/spotify/spotify.service';
 import { MockSpotifyService } from 'src/app/shared/services/spotify/spotify.service.mock';
 
-import { trackMock } from '../../../models/track.mock';
+import { trackMock } from '../../../shared/models/track/track.mock';
 import * as fromLayoutActions from '../../layout/actions/layout.actions';
 import * as fromPlaylistActions from '../actions/playlist.actions';
 import { PlaylistEffects } from './playlist.effects';

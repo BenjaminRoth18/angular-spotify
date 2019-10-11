@@ -1,4 +1,4 @@
-import { playlistDtoMock, trackMock } from 'src/app/models/track.mock';
+import { playlistDtoMock, trackMock } from 'src/app/shared/models/track/track.mock';
 
 import { MockStorageService } from '../storage/storage.service.mock';
 import { SpotifyService } from './spotify.service';

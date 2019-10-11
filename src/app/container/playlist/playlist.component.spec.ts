@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { trackMock } from 'src/app/models/track.mock';
 import { MockLoaderComponent } from 'src/app/shared/components/loader/loader.component.mock';
+import { trackMock } from 'src/app/shared/models/track/track.mock';
 import { LayoutStateService } from 'src/app/store/layout/services/layout.state.service';
 import { MockLayoutStateService } from 'src/app/store/layout/services/layout.state.service.mock';
 import { PlaylistStateService } from 'src/app/store/playlist/services/playlist.state.service';

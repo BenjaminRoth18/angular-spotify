@@ -1,4 +1,4 @@
-import { HttpMock } from '../../models/http.mock';
+import { HttpMock } from '../../models/http/http.mock';
 import { MockSpotifyService } from '../spotify/spotify.service.mock';
 import { ApiService } from './api.service';
 

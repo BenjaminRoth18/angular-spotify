@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { mergeMap, switchMap } from 'rxjs/operators';
-import { PlaylistDto } from 'src/app/models/track.model';
+import { PlaylistDto } from 'src/app/shared/models/track/track.model';
 import { ApiService } from 'src/app/shared/services/api/api.service';
 import { SpotifyService } from 'src/app/shared/services/spotify/spotify.service';
 

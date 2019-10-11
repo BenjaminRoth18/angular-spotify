@@ -7,8 +7,8 @@ You can check out the deployed version on [Netlify](https://happy-wing-cbad8b.ne
 
 Based on:
 
--   Angular 8.3.3
--   NGRX Store 8.3.0
+-   [Angular 8.3.3](https://github.com/angular/angular-cli)
+-   [NGRX Store 8.3.0](https://ngrx.io)
 
 ![Spotify top tracks](src/assets/screenshot.png)
 
@@ -22,7 +22,7 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests with jest
 

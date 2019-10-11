@@ -1,4 +1,4 @@
-import { trackMock } from '../../../models/track.mock';
+import { trackMock } from '../../../shared/models/track/track.mock';
 import * as fromPlaylistActions from './playlist.actions';
 
 describe('PlaylistActions', () => {

@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { Action } from '@ngrx/store';
 import { cold } from 'jest-marbles';
 import { Observable, of } from 'rxjs';
-import { HttpMock } from 'src/app/shared/models/http.mock';
+import { HttpMock } from 'src/app/shared/models/http/http.mock';
 import { ApiService } from 'src/app/shared/services/api/api.service';
 import { MockApiService } from 'src/app/shared/services/api/api.service.mock';
 import { StorageService } from 'src/app/shared/services/storage/storage.service';

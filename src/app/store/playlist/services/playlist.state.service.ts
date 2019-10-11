@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Track } from 'src/app/models/track.model';
+import { Track } from 'src/app/shared/models/track/track.model';
 
 import * as fromPlaylist from '../selectors';
 

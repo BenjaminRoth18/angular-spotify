@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Token } from 'src/app/models/auth.model';
+import { Token } from 'src/app/shared/models/auth/auth.model';
 
 export enum AuthActionTypes {
     GET_TOKEN = '[Auth] Get Token',

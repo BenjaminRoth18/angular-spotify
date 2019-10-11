@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Track } from 'src/app/models/track.model';
+import { Track } from 'src/app/shared/models/track/track.model';
 
 export enum PlaylistActionTypes {
     FETCH_PLAYLIST = '[Playlist] Fetch playlist',
