@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotifyService should create playlist snapshot 1`] = `
+Array [
+  Object {
+    "artist": "artist name",
+    "imageUrl": "image url",
+    "track": "track name",
+  },
+]
+`;

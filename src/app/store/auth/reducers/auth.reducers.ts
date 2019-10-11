@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
 
-import * as fromLoginActions from '../actions/login.actions';
+import * as fromAuthActions from '../actions/auth.actions';
 
 export interface State {
     token: string;
@@ -10,9 +10,9 @@ export const initialState: State = {
     token: ''
 };
 
-const loginReducer = createReducer(
+const authReducer = createReducer(
     initialState,
-    on(fromLoginActions.getTokenSuccess, (state: State, { payload }) => {
+    on(fromAuthActions.getTokenSuccess, (state: State, { payload }) => {
         return {
             ...state,
             token: payload.token
@@ -21,5 +21,5 @@ const loginReducer = createReducer(
 );
 
 export function reducer(state: State, action: Action) {
-    return loginReducer(state, action);
+    return authReducer(state, action);
 }

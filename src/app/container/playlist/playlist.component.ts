@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Track } from 'src/app/models/track.model';
+import { LayoutStateService } from 'src/app/store/layout/services/layout.state.service';
 import { PlaylistStateService } from 'src/app/store/playlist/services/playlist.state.service';
 
 @Component({
@@ -11,8 +12,12 @@ import { PlaylistStateService } from 'src/app/store/playlist/services/playlist.s
 export class PlaylistComponent implements OnInit, OnDestroy {
     playlist: Track[];
     subscriptions = new Subscription();
+    loadingCount: number;
 
-    constructor(private playlistStateService: PlaylistStateService) {}
+    constructor(
+        private playlistStateService: PlaylistStateService,
+        private layoutStateService: LayoutStateService
+    ) {}
 
     ngOnInit(): void {
         this.subscriptions.add(
@@ -20,6 +25,14 @@ export class PlaylistComponent implements OnInit, OnDestroy {
                 .getPlaylist()
                 .subscribe((playlist: Track[]) => {
                     this.playlist = playlist;
+                })
+        );
+
+        this.subscriptions.add(
+            this.layoutStateService
+                .getLoadingCount()
+                .subscribe((loadingCount: number) => {
+                    this.loadingCount = loadingCount;
                 })
         );
     }

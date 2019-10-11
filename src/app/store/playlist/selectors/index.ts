@@ -1,12 +1,10 @@
 import { createSelector } from '@ngrx/store';
 
-import * as fromPlaylistReducers from '../reducers/playlist.reducer';
+import * as fromPlaylistReducers from '../reducers/playlist.reducers';
 
 export interface PlaylistAppState {
-    playlist: PlaylistState;
+    playlist: fromPlaylistReducers.State;
 }
-
-export type PlaylistState = fromPlaylistReducers.State;
 
 export const selectPlaylist = (state: PlaylistAppState) => state.playlist;
 

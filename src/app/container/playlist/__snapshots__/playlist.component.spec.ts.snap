@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlaylistComponent snaphots should create snapshot 1`] = `
+<sp-playlist
+  layoutStateService={[Function MockLayoutStateService]}
+  playlistStateService={[Function MockPlaylistStateService]}
+  subscriptions={[Function Subscription]}
+>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      
+    </div>
+  </div>
+</sp-playlist>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoaderComponent snaphots should create snapshot 1`] = `
+<sp-loader>
+  <div
+    class="sp-loader d-flex justify-content-center"
+  >
+    <div
+      class="spinner-border text-light"
+      role="status"
+    >
+      <span
+        class="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>
+</sp-loader>
+`;

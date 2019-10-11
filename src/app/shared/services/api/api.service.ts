@@ -11,7 +11,7 @@ export class ApiService {
         private spotifyService: SpotifyService
     ) {}
 
-    login(): Observable<{}> {
+    auth(): Observable<{}> {
         return this.http.post(
             this.spotifyService.tokenEndpoint,
             this.spotifyService.tokenParams,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LoginStateService } from './store/login/services/login.state.service';
+import { AuthStateService } from './store/auth/services/auth.state.service';
 
 @Component({
     selector: 'sp-root',
@@ -8,9 +8,9 @@ import { LoginStateService } from './store/login/services/login.state.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    constructor(private loginStateService: LoginStateService) {}
+    constructor(private authStateService: AuthStateService) {}
 
     ngOnInit(): void {
-        this.loginStateService.setToken();
+        this.authStateService.getToken();
     }
 }

@@ -36,14 +36,14 @@ export class SpotifyService {
         return headerOptions;
     }
 
-    createPlaylist(playlistData: PlaylistDto) {
+    createPlaylist(playlistData: PlaylistDto): Track[] {
         const tracks = playlistData.tracks.items;
 
         return tracks.reduce((list: Track[], item: PlaylistItemDto) => {
             const trackItem = {} as Track;
-            trackItem['imageUrl'] = item.track.album.images[0].url;
             trackItem['artist'] = item.track.artists[0].name;
             trackItem['track'] = item.track.name;
+            trackItem['imageUrl'] = item.track.album.images[0].url;
             list.push(trackItem);
             return list;
         }, []);

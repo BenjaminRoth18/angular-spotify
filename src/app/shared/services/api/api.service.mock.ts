@@ -1,6 +1,12 @@
 import { of } from 'rxjs';
 
-export class MockApiService {
-    login = jest.fn().mockReturnValue(of({ acces_token: 'foo' }));
+import { ApiService } from './api.service';
+
+export class MockApiService extends ApiService {
+    auth = jest.fn().mockReturnValue(of({ acces_token: 'foo' }));
     getPlaylist = jest.fn();
+
+    constructor(public httpMock: any) {
+        super({} as any, {} as any);
+    }
 }

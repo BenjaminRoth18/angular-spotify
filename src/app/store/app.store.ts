@@ -1,16 +1,17 @@
 import { ActionReducerMap } from '@ngrx/store';
 
-import * as fromLoginReducers from './login/reducers/login.reducer';
-import * as fromLogin from './login/selectors';
-import * as fromPlaylistReducers from './playlist/reducers/playlist.reducer';
-import * as fromPlaylist from './playlist/selectors';
+import * as fromAuthReducers from './auth/reducers/auth.reducers';
+import * as fromLayoutReducers from './layout/reducers/layout.reducer';
+import * as fromPlaylistReducers from './playlist/reducers/playlist.reducers';
 
 export interface AppState {
-    login: fromLogin.LoginState;
-    playlist: fromPlaylist.PlaylistState;
+    auth: fromAuthReducers.State;
+    playlist: fromPlaylistReducers.State;
+    layout: fromLayoutReducers.State;
 }
 
 export const appReducers: ActionReducerMap<AppState> = {
-    login: fromLoginReducers.reducer,
-    playlist: fromPlaylistReducers.reducer
+    auth: fromAuthReducers.reducer,
+    playlist: fromPlaylistReducers.reducer,
+    layout: fromLayoutReducers.reducer
 };
